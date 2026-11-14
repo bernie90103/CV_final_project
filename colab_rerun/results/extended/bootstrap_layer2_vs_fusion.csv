@@ -1,0 +1,55 @@
+category,image_size,budget,seed,debug,group,direction,status,n_images,pointing@8px_diff,pointing@8px_ci95,region_recall_diff,region_recall_ci95
+capsule,224,bank4096,0,False,all,fusion minus layer2,ok,109,0.00917431192660556,"[-0.01834862385321101, 0.04587155963302747]",0.016666666666666666,"[0.0, 0.05]"
+capsule,224,bank4096,0,False,small,fusion minus layer2,ok,85,0.01176470588235301,"[-0.02352941176470591, 0.05882352941176472]",0.0,"[0.0, 0.0]"
+capsule,224,bank4096,1,False,all,fusion minus layer2,ok,109,0.0,"[-0.02752293577981657, 0.02752293577981646]",0.016666666666666666,"[0.0, 0.040983606557377046]"
+capsule,224,bank4096,1,False,small,fusion minus layer2,ok,85,0.0,"[-0.03529411764705881, 0.03529411764705881]",0.0,"[0.0, 0.0]"
+capsule,224,bank4096,2,False,all,fusion minus layer2,ok,109,0.00917431192660556,"[0.0, 0.02752293577981657]",0.008333333333333333,"[0.0, 0.025]"
+capsule,224,bank4096,2,False,small,fusion minus layer2,ok,85,0.01176470588235301,"[0.0, 0.03529411764705892]",0.0,"[0.0, 0.0]"
+capsule,224,ratio0.1,0,False,all,fusion minus layer2,ok,109,0.00917431192660556,"[-0.01834862385321101, 0.04587155963302747]",0.025,"[0.0, 0.064]"
+capsule,224,ratio0.1,0,False,small,fusion minus layer2,ok,85,0.0117647058823529,"[-0.02352941176470591, 0.05882352941176461]",0.0,"[0.0, 0.0]"
+capsule,224,ratio0.1,1,False,all,fusion minus layer2,ok,109,0.01834862385321101,"[0.0, 0.04587155963302758]",0.025,"[0.0, 0.064]"
+capsule,224,ratio0.1,1,False,small,fusion minus layer2,ok,85,0.0235294117647058,"[0.0, 0.05882352941176472]",0.0,"[0.0, 0.0]"
+capsule,224,ratio0.1,2,False,all,fusion minus layer2,ok,109,0.0,"[-0.02752293577981646, 0.02752293577981657]",0.016666666666666666,"[0.0, 0.05]"
+capsule,224,ratio0.1,2,False,small,fusion minus layer2,ok,85,0.0,"[-0.03529411764705881, 0.03529411764705881]",0.0,"[0.0, 0.0]"
+capsule,320,ratio0.1,0,False,all,fusion minus layer2,ok,109,0.0,"[0.0, 0.0]",0.00819672131147541,"[0.0, 0.02459016393442623]"
+capsule,320,ratio0.1,0,False,small,fusion minus layer2,ok,85,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+capsule,320,ratio0.1,1,False,all,fusion minus layer2,ok,109,0.0,"[0.0, 0.0]",0.00819672131147541,"[0.0, 0.02459016393442623]"
+capsule,320,ratio0.1,1,False,small,fusion minus layer2,ok,85,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+capsule,320,ratio0.1,2,False,all,fusion minus layer2,ok,109,0.0,"[0.0, 0.0]",0.00819672131147541,"[0.0, 0.02459016393442623]"
+capsule,320,ratio0.1,2,False,small,fusion minus layer2,ok,85,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+metal_nut,224,bank4096,0,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.007633587786259542,"[0.0, 0.024004838709677394]"
+metal_nut,224,bank4096,0,False,small,fusion minus layer2,insufficient_samples,7,,,,
+metal_nut,224,bank4096,1,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+metal_nut,224,bank4096,1,False,small,fusion minus layer2,insufficient_samples,7,,,,
+metal_nut,224,bank4096,2,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+metal_nut,224,bank4096,2,False,small,fusion minus layer2,insufficient_samples,7,,,,
+metal_nut,224,ratio0.1,0,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.015267175572519083,"[0.0, 0.0364963503649635]"
+metal_nut,224,ratio0.1,0,False,small,fusion minus layer2,insufficient_samples,7,,,,
+metal_nut,224,ratio0.1,1,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.007633587786259542,"[0.0, 0.024004838709677394]"
+metal_nut,224,ratio0.1,1,False,small,fusion minus layer2,insufficient_samples,7,,,,
+metal_nut,224,ratio0.1,2,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+metal_nut,224,ratio0.1,2,False,small,fusion minus layer2,insufficient_samples,7,,,,
+metal_nut,320,ratio0.1,0,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+metal_nut,320,ratio0.1,0,False,small,fusion minus layer2,insufficient_samples,7,,,,
+metal_nut,320,ratio0.1,1,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+metal_nut,320,ratio0.1,1,False,small,fusion minus layer2,insufficient_samples,7,,,,
+metal_nut,320,ratio0.1,2,False,all,fusion minus layer2,ok,93,0.0,"[0.0, 0.0]",0.0,"[0.0, 0.0]"
+metal_nut,320,ratio0.1,2,False,small,fusion minus layer2,insufficient_samples,7,,,,
+screw,224,bank4096,0,False,all,fusion minus layer2,ok,119,0.01680672268907557,"[-0.025210084033613467, 0.05882352941176472]",0.007352941176470588,"[-0.02112676056338028, 0.043478260869565216]"
+screw,224,bank4096,0,False,small,fusion minus layer2,ok,118,0.016949152542372836,"[-0.025423728813559254, 0.05932203389830504]",0.007407407407407408,"[-0.02127659574468085, 0.043795620437956206]"
+screw,224,bank4096,1,False,all,fusion minus layer2,ok,119,-0.01680672268907568,"[-0.0672268907563025, 0.025210084033613467]",-0.007352941176470588,"[-0.022222222222222223, 0.0]"
+screw,224,bank4096,1,False,small,fusion minus layer2,ok,118,-0.016949152542372947,"[-0.06779661016949146, 0.025423728813559365]",-0.007407407407407408,"[-0.022388059701492536, 0.0]"
+screw,224,bank4096,2,False,all,fusion minus layer2,ok,119,-0.008403361344537785,"[-0.050420168067226934, 0.03361344537815125]",0.0,"[-0.030534351145038167, 0.037037037037037035]"
+screw,224,bank4096,2,False,small,fusion minus layer2,ok,118,-0.008474576271186418,"[-0.05084745762711862, 0.03389830508474578]",0.0,"[-0.03076923076923077, 0.03731343283582089]"
+screw,224,ratio0.1,0,False,all,fusion minus layer2,ok,119,0.01680672268907557,"[-0.0254201680672269, 0.0672268907563025]",0.0,"[-0.03759398496240601, 0.02962962962962963]"
+screw,224,ratio0.1,0,False,small,fusion minus layer2,ok,118,0.016949152542372836,"[-0.025635593220339013, 0.06779661016949146]",0.0,"[-0.03787878787878788, 0.029850746268656716]"
+screw,224,ratio0.1,1,False,all,fusion minus layer2,ok,119,-0.025210084033613467,"[-0.0672268907563025, 0.01680672268907568]",0.0,"[-0.02877697841726619, 0.02857142857142857]"
+screw,224,ratio0.1,1,False,small,fusion minus layer2,ok,118,-0.025423728813559254,"[-0.06779661016949157, 0.016949152542372947]",0.0,"[-0.028985507246376812, 0.02877697841726619]"
+screw,224,ratio0.1,2,False,all,fusion minus layer2,ok,119,-0.05042016806722682,"[-0.10084033613445376, -0.008403361344537785]",0.0,"[-0.029411764705882353, 0.02857142857142857]"
+screw,224,ratio0.1,2,False,small,fusion minus layer2,ok,118,-0.05084745762711862,"[-0.10169491525423724, -0.008474576271186418]",0.0,"[-0.02962962962962963, 0.02877697841726619]"
+screw,320,ratio0.1,0,False,all,fusion minus layer2,ok,119,0.025210084033613467,"[-0.008403361344537896, 0.0672268907563025]",0.0,"[0.0, 0.0]"
+screw,320,ratio0.1,0,False,small,fusion minus layer2,ok,118,0.025423728813559254,"[-0.008474576271186418, 0.06779661016949146]",0.0,"[0.0, 0.0]"
+screw,320,ratio0.1,1,False,all,fusion minus layer2,ok,119,0.01680672268907568,"[-0.01680672268907557, 0.050420168067226934]",0.0,"[0.0, 0.0]"
+screw,320,ratio0.1,1,False,small,fusion minus layer2,ok,118,0.016949152542372836,"[-0.016949152542372836, 0.05084745762711862]",0.0,"[0.0, 0.0]"
+screw,320,ratio0.1,2,False,all,fusion minus layer2,ok,119,0.01680672268907568,"[-0.01680672268907557, 0.050420168067226934]",0.007407407407407408,"[0.0, 0.022388059701492536]"
+screw,320,ratio0.1,2,False,small,fusion minus layer2,ok,118,0.016949152542372836,"[-0.016949152542372836, 0.05084745762711862]",0.007462686567164179,"[0.0, 0.022556390977443608]"

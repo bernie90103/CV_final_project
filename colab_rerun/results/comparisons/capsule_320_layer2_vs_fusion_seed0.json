@@ -1,0 +1,66 @@
+{
+  "repeats": 1000,
+  "bins": 4096,
+  "seed": 2026,
+  "method": "paired stratified image percentile bootstrap; binned AUPRO@0.3",
+  "direction": "B minus A; positive favors B",
+  "groups": {
+    "all": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 109,
+      "exact_aupro_a": 0.9672936204278126,
+      "exact_aupro_b": 0.9664590620979543,
+      "exact_difference_b_minus_a": -0.0008345583298583481,
+      "binned_point_estimates": [
+        0.9672968929155894,
+        0.9664675760201851
+      ],
+      "max_point_approximation_error": 8.513922230779514e-06,
+      "ci95_b_minus_a": [
+        -0.0031609192680090215,
+        0.0015433559067846569
+      ],
+      "valid_repeats": 1000
+    },
+    "small": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 85,
+      "exact_aupro_a": 0.98689154434957,
+      "exact_aupro_b": 0.9867130117469111,
+      "exact_difference_b_minus_a": -0.0001785326026589873,
+      "binned_point_estimates": [
+        0.9868910648010917,
+        0.9867131281266643
+      ],
+      "max_point_approximation_error": 4.795484783715054e-07,
+      "ci95_b_minus_a": [
+        -0.0013384152309615454,
+        0.0013854259209256342
+      ],
+      "valid_repeats": 1000
+    },
+    "large": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 24,
+      "exact_aupro_a": 0.9212150960529494,
+      "exact_aupro_b": 0.9219437673144606,
+      "exact_difference_b_minus_a": 0.0007286712615112156,
+      "binned_point_estimates": [
+        0.9212269227791846,
+        0.9219749681107033
+      ],
+      "max_point_approximation_error": 3.120079624274741e-05,
+      "ci95_b_minus_a": [
+        -0.005167883084594993,
+        0.007322307627004814
+      ],
+      "valid_repeats": 1000
+    }
+  },
+  "run_a": "/content/drive/MyDrive/group6_patchcore/runs_colab/formal/capsule/size320/layer2/ratio0.1/seed0",
+  "run_b": "/content/drive/MyDrive/group6_patchcore/runs_colab/formal/capsule/size320/fusion/ratio0.1/seed0",
+  "debug_subset": false
+}

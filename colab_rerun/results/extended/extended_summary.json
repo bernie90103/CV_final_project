@@ -1,0 +1,1901 @@
+{
+  "settings": {
+    "normal_fpr": 0.01,
+    "tolerance_px": 8,
+    "repeats": 2000,
+    "include_debug": false,
+    "fpr_limits": [
+      0.3,
+      0.05,
+      0.01
+    ],
+    "image_fpr": 0.05,
+    "size_bins": [
+      "<64",
+      "64-255",
+      "256-1023",
+      ">=1024"
+    ]
+  },
+  "notes": [
+    "pixel_f1max_oracle selects its threshold on test masks; use it only as a diagnostic.",
+    "Region recall thresholds come from normal test images only.",
+    "Claims compare three-seed means; check max_seed_std before reading small gaps."
+  ],
+  "claims": [
+    {
+      "metric": "aupro@0.3",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "aupro@0.3",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.3",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.3",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "aupro@0.3",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.3",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.3",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 1,
+      "holds_fraction": 0.1111111111111111
+    },
+    {
+      "metric": "aupro@0.3",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "aupro@0.3",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "aupro@0.05",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "aupro@0.01",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "pixel_ap",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 1,
+      "holds_fraction": 0.1111111111111111
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "pixel_f1max_oracle",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "image_auroc",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "image_auroc",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "image_auroc",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "image_auroc",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "image_auroc",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "image_auroc",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "image_auroc",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "image_auroc",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "image_auroc",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "image_ap",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 4,
+      "holds_fraction": 0.4444444444444444
+    },
+    {
+      "metric": "image_ap",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "image_ap",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "image_ap",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "image_ap",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "image_ap",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "image_ap",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "image_ap",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "image_ap",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 4,
+      "holds_fraction": 0.4444444444444444
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 2,
+      "holds_fraction": 0.2222222222222222
+    },
+    {
+      "metric": "image_tpr@fpr0.05",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 2,
+      "holds_fraction": 0.2222222222222222
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 2,
+      "holds_fraction": 0.2222222222222222
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "pointing@0px",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 6,
+      "holds_fraction": 0.6666666666666666
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 9,
+      "holds_fraction": 1.0
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 4,
+      "holds_fraction": 0.4444444444444444
+    },
+    {
+      "metric": "pointing@8px",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 2,
+      "holds_fraction": 0.2222222222222222
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "all",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "all",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "all",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "small",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 8,
+      "holds_fraction": 0.8888888888888888
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "small",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 7,
+      "holds_fraction": 0.7777777777777778
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "small",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "large",
+      "claim": "layer2 >= fusion",
+      "n_cases": 9,
+      "n_holds": 4,
+      "holds_fraction": 0.4444444444444444
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "large",
+      "claim": "layer2 > layer3",
+      "n_cases": 9,
+      "n_holds": 3,
+      "holds_fraction": 0.3333333333333333
+    },
+    {
+      "metric": "region_recall@nfpr0.01",
+      "group": "large",
+      "claim": "320 > 224",
+      "n_cases": 9,
+      "n_holds": 5,
+      "holds_fraction": 0.5555555555555556
+    }
+  ],
+  "bootstrap": [
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.00917431192660556,
+      "pointing@8px_ci95": [
+        -0.01834862385321101,
+        0.04587155963302747
+      ],
+      "region_recall_diff": 0.016666666666666666,
+      "region_recall_ci95": [
+        0.0,
+        0.05
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.01176470588235301,
+      "pointing@8px_ci95": [
+        -0.02352941176470591,
+        0.05882352941176472
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        -0.02752293577981657,
+        0.02752293577981646
+      ],
+      "region_recall_diff": 0.016666666666666666,
+      "region_recall_ci95": [
+        0.0,
+        0.040983606557377046
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        -0.03529411764705881,
+        0.03529411764705881
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.00917431192660556,
+      "pointing@8px_ci95": [
+        0.0,
+        0.02752293577981657
+      ],
+      "region_recall_diff": 0.008333333333333333,
+      "region_recall_ci95": [
+        0.0,
+        0.025
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.01176470588235301,
+      "pointing@8px_ci95": [
+        0.0,
+        0.03529411764705892
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.00917431192660556,
+      "pointing@8px_ci95": [
+        -0.01834862385321101,
+        0.04587155963302747
+      ],
+      "region_recall_diff": 0.025,
+      "region_recall_ci95": [
+        0.0,
+        0.064
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.0117647058823529,
+      "pointing@8px_ci95": [
+        -0.02352941176470591,
+        0.05882352941176461
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.01834862385321101,
+      "pointing@8px_ci95": [
+        0.0,
+        0.04587155963302758
+      ],
+      "region_recall_diff": 0.025,
+      "region_recall_ci95": [
+        0.0,
+        0.064
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.0235294117647058,
+      "pointing@8px_ci95": [
+        0.0,
+        0.05882352941176472
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        -0.02752293577981646,
+        0.02752293577981657
+      ],
+      "region_recall_diff": 0.016666666666666666,
+      "region_recall_ci95": [
+        0.0,
+        0.05
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        -0.03529411764705881,
+        0.03529411764705881
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.00819672131147541,
+      "region_recall_ci95": [
+        0.0,
+        0.02459016393442623
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.00819672131147541,
+      "region_recall_ci95": [
+        0.0,
+        0.02459016393442623
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 109,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.00819672131147541,
+      "region_recall_ci95": [
+        0.0,
+        0.02459016393442623
+      ]
+    },
+    {
+      "category": "capsule",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 85,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.007633587786259542,
+      "region_recall_ci95": [
+        0.0,
+        0.024004838709677394
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.015267175572519083,
+      "region_recall_ci95": [
+        0.0,
+        0.0364963503649635
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.007633587786259542,
+      "region_recall_ci95": [
+        0.0,
+        0.024004838709677394
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 93,
+      "pointing@8px_diff": 0.0,
+      "pointing@8px_ci95": [
+        0.0,
+        0.0
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "metal_nut",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "insufficient_samples",
+      "n_images": 7,
+      "pointing@8px_diff": null,
+      "pointing@8px_ci95": null,
+      "region_recall_diff": null,
+      "region_recall_ci95": null
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": 0.01680672268907557,
+      "pointing@8px_ci95": [
+        -0.025210084033613467,
+        0.05882352941176472
+      ],
+      "region_recall_diff": 0.007352941176470588,
+      "region_recall_ci95": [
+        -0.02112676056338028,
+        0.043478260869565216
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": 0.016949152542372836,
+      "pointing@8px_ci95": [
+        -0.025423728813559254,
+        0.05932203389830504
+      ],
+      "region_recall_diff": 0.007407407407407408,
+      "region_recall_ci95": [
+        -0.02127659574468085,
+        0.043795620437956206
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": -0.01680672268907568,
+      "pointing@8px_ci95": [
+        -0.0672268907563025,
+        0.025210084033613467
+      ],
+      "region_recall_diff": -0.007352941176470588,
+      "region_recall_ci95": [
+        -0.022222222222222223,
+        0.0
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": -0.016949152542372947,
+      "pointing@8px_ci95": [
+        -0.06779661016949146,
+        0.025423728813559365
+      ],
+      "region_recall_diff": -0.007407407407407408,
+      "region_recall_ci95": [
+        -0.022388059701492536,
+        0.0
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": -0.008403361344537785,
+      "pointing@8px_ci95": [
+        -0.050420168067226934,
+        0.03361344537815125
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        -0.030534351145038167,
+        0.037037037037037035
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "bank4096",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": -0.008474576271186418,
+      "pointing@8px_ci95": [
+        -0.05084745762711862,
+        0.03389830508474578
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        -0.03076923076923077,
+        0.03731343283582089
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": 0.01680672268907557,
+      "pointing@8px_ci95": [
+        -0.0254201680672269,
+        0.0672268907563025
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        -0.03759398496240601,
+        0.02962962962962963
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": 0.016949152542372836,
+      "pointing@8px_ci95": [
+        -0.025635593220339013,
+        0.06779661016949146
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        -0.03787878787878788,
+        0.029850746268656716
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": -0.025210084033613467,
+      "pointing@8px_ci95": [
+        -0.0672268907563025,
+        0.01680672268907568
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        -0.02877697841726619,
+        0.02857142857142857
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": -0.025423728813559254,
+      "pointing@8px_ci95": [
+        -0.06779661016949157,
+        0.016949152542372947
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        -0.028985507246376812,
+        0.02877697841726619
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": -0.05042016806722682,
+      "pointing@8px_ci95": [
+        -0.10084033613445376,
+        -0.008403361344537785
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        -0.029411764705882353,
+        0.02857142857142857
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 224,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": -0.05084745762711862,
+      "pointing@8px_ci95": [
+        -0.10169491525423724,
+        -0.008474576271186418
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        -0.02962962962962963,
+        0.02877697841726619
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": 0.025210084033613467,
+      "pointing@8px_ci95": [
+        -0.008403361344537896,
+        0.0672268907563025
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 0,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": 0.025423728813559254,
+      "pointing@8px_ci95": [
+        -0.008474576271186418,
+        0.06779661016949146
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": 0.01680672268907568,
+      "pointing@8px_ci95": [
+        -0.01680672268907557,
+        0.050420168067226934
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 1,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": 0.016949152542372836,
+      "pointing@8px_ci95": [
+        -0.016949152542372836,
+        0.05084745762711862
+      ],
+      "region_recall_diff": 0.0,
+      "region_recall_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "all",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 119,
+      "pointing@8px_diff": 0.01680672268907568,
+      "pointing@8px_ci95": [
+        -0.01680672268907557,
+        0.050420168067226934
+      ],
+      "region_recall_diff": 0.007407407407407408,
+      "region_recall_ci95": [
+        0.0,
+        0.022388059701492536
+      ]
+    },
+    {
+      "category": "screw",
+      "image_size": 320,
+      "budget": "ratio0.1",
+      "seed": 2,
+      "debug": false,
+      "group": "small",
+      "direction": "fusion minus layer2",
+      "status": "ok",
+      "n_images": 118,
+      "pointing@8px_diff": 0.016949152542372836,
+      "pointing@8px_ci95": [
+        -0.016949152542372836,
+        0.05084745762711862
+      ],
+      "region_recall_diff": 0.007462686567164179,
+      "region_recall_ci95": [
+        0.0,
+        0.022556390977443608
+      ]
+    }
+  ]
+}

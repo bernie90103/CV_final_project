@@ -1,0 +1,66 @@
+{
+  "repeats": 1000,
+  "bins": 4096,
+  "seed": 2026,
+  "method": "paired stratified image percentile bootstrap; binned AUPRO@0.3",
+  "direction": "B minus A; positive favors B",
+  "groups": {
+    "all": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 109,
+      "exact_aupro_a": 0.9314190857774417,
+      "exact_aupro_b": 0.9250164563845694,
+      "exact_difference_b_minus_a": -0.006402629392872283,
+      "binned_point_estimates": [
+        0.9314173057585527,
+        0.9250023348239088
+      ],
+      "max_point_approximation_error": 1.4121560660607102e-05,
+      "ci95_b_minus_a": [
+        -0.01705655220530964,
+        0.0016555372195197452
+      ],
+      "valid_repeats": 1000
+    },
+    "small": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 85,
+      "exact_aupro_a": 0.9739831143902777,
+      "exact_aupro_b": 0.9716985532220439,
+      "exact_difference_b_minus_a": -0.002284561168233834,
+      "binned_point_estimates": [
+        0.9739828219094887,
+        0.9716990762300833
+      ],
+      "max_point_approximation_error": 5.230080394325043e-07,
+      "ci95_b_minus_a": [
+        -0.004075192078708994,
+        -0.0004936874415366391
+      ],
+      "valid_repeats": 1000
+    },
+    "large": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 24,
+      "exact_aupro_a": 0.8408901024319279,
+      "exact_aupro_b": 0.8350037628694548,
+      "exact_difference_b_minus_a": -0.005886339562473086,
+      "binned_point_estimates": [
+        0.8408760176541791,
+        0.8349528069333289
+      ],
+      "max_point_approximation_error": 5.09559361259182e-05,
+      "ci95_b_minus_a": [
+        -0.03664340199193703,
+        0.019499849133343638
+      ],
+      "valid_repeats": 1000
+    }
+  },
+  "run_a": "/content/drive/MyDrive/group6_patchcore/runs_colab/formal/capsule/size224/layer2/ratio0.1/seed0",
+  "run_b": "/content/drive/MyDrive/group6_patchcore/runs_colab/formal/capsule/size224/fusion/ratio0.1/seed0",
+  "debug_subset": false
+}

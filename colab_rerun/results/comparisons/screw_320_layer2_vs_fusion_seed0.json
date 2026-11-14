@@ -1,0 +1,53 @@
+{
+  "repeats": 1000,
+  "bins": 4096,
+  "seed": 2026,
+  "method": "paired stratified image percentile bootstrap; binned AUPRO@0.3",
+  "direction": "B minus A; positive favors B",
+  "groups": {
+    "all": {
+      "status": "ok",
+      "n_normal": 41,
+      "n_anomaly": 119,
+      "exact_aupro_a": 0.9800178353057554,
+      "exact_aupro_b": 0.9797443627366367,
+      "exact_difference_b_minus_a": -0.00027347256911869344,
+      "binned_point_estimates": [
+        0.9800178187554452,
+        0.9797439399802906
+      ],
+      "max_point_approximation_error": 4.227563460412753e-07,
+      "ci95_b_minus_a": [
+        -0.0019613920562748686,
+        0.0014046898764404345
+      ],
+      "valid_repeats": 1000
+    },
+    "small": {
+      "status": "ok",
+      "n_normal": 41,
+      "n_anomaly": 118,
+      "exact_aupro_a": 0.9799669702618732,
+      "exact_aupro_b": 0.9797231530665984,
+      "exact_difference_b_minus_a": -0.00024381719527477586,
+      "binned_point_estimates": [
+        0.9799669480202332,
+        0.979722729745028
+      ],
+      "max_point_approximation_error": 4.233215703530746e-07,
+      "ci95_b_minus_a": [
+        -0.0019625658663393135,
+        0.0013428844964494422
+      ],
+      "valid_repeats": 1000
+    },
+    "large": {
+      "status": "insufficient_samples",
+      "n_normal": 41,
+      "n_anomaly": 1
+    }
+  },
+  "run_a": "/content/drive/MyDrive/group6_patchcore/runs_colab/formal/screw/size320/layer2/ratio0.1/seed0",
+  "run_b": "/content/drive/MyDrive/group6_patchcore/runs_colab/formal/screw/size320/fusion/ratio0.1/seed0",
+  "debug_subset": false
+}
