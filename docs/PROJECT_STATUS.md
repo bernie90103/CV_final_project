@@ -12,6 +12,12 @@ Each of the 81 run folders contains `complete.json`, `config.json`, `metrics.jso
 
 The data audit, three-seed aggregate tables, six paired image-bootstrap comparisons of layer2 and fusion, and qualitative examples are complete. The final report is seven pages and includes nine cited research papers.
 
+## Teammate Colab rerun and extended analysis
+
+The merged contribution in `colab_rerun/` is supplementary to the Windows-based final PDF and slides. Its notebook describes a full 81-run Colab rerun; the repository contains cleared notebook cells, aggregate tables, extended metrics, comparisons, figures, code, and tests. Full Colab run folders are not in GitHub. See `docs/組員新增資料索引.md` before using its results in a report.
+
+The Colab and Windows summary CSVs contain the same 81 condition rows and matching dataset and study-source hashes. The largest AUPRO@0.3 mean difference is about 2.24e-5. The original 9 scientific tests and the new 13 extended-metric tests pass locally. Colab and Windows latency values describe different hardware and must remain separate. The existing final PDF and presentations have not been rewritten to include the extended metrics.
+
 ## Findings
 
 Layer2 has higher small-defect AUPRO@0.3 than layer3 in all three categories at both input sizes. Fusion scores are close to layer2 but do not consistently improve on it. With equal 16 MiB vector banks, layer2 scores 0.9593 versus 0.9505 for fusion on screw and 0.9733 versus 0.9719 on capsule. Fusion scores 0.9953 versus 0.9951 on metal_nut, a difference of 0.0002 in a subgroup with seven anomaly images. Layer2 is faster than fusion in all three matched-bank categories.

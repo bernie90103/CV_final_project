@@ -1,8 +1,10 @@
 # Group 6 — PatchCore small defect localization
 
-組員快速入口：[英文期末報告 PDF](output/pdf/group6_patchcore_final_report.pdf) · [可編輯英文 Word](output/word/group6_patchcore_final_report.docx) · [英文簡報](output/presentation/group6_patchcore_final_presentation.pptx) · [中文對照簡報](output/presentation/group6_patchcore_final_presentation_zh.pptx) · [中文專案與重現指南](docs/實作與執行指南.md) · [中文錄影報告指南](docs/錄影報告指南.md) · [結果摘要](results/summary_windows/mean_std.csv)。正式報告維持全英文；其餘操作說明使用中文並保留必要的英文術語。
+組員快速入口：[英文期末報告 PDF](output/pdf/group6_patchcore_final_report.pdf) · [可編輯英文 Word](output/word/group6_patchcore_final_report.docx) · [英文簡報](output/presentation/group6_patchcore_final_presentation.pptx) · [中文對照簡報](output/presentation/group6_patchcore_final_presentation_zh.pptx) · [新增資料與報告索引](docs/組員新增資料索引.md) · [中文專案與重現指南](docs/實作與執行指南.md) · [中文錄影報告指南](docs/錄影報告指南.md) · [結果摘要](results/summary_windows/mean_std.csv)。正式報告維持全英文；其餘操作說明使用中文並保留必要的英文術語。
 
 這個公開儲存庫收錄程式、七頁英文報告、精簡實驗結果與圖表。原始 MVTec AD 圖片、預訓練權重及約 7.8 GB 的逐次執行輸出留在本機，未上傳 GitHub。想從頭執行的組員需下載資料與權重；只想看成果可直接開啟報告與 `results/summary_windows/`。
+
+2026 年 11 月隊員另外加入了 [Colab 重跑與延伸指標](colab_rerun/README.md)。它保留在獨立的 `colab_rerun/`，作為原 Windows 實驗的補充驗證；新增的嚴格誤報率指標、區域召回率與 bootstrap 表不在目前的正式 PDF 和簡報中。兩邊的準確度可以對照，延遲不能跨硬體直接比較。各檔案用途與驗證結果見[新增資料與報告索引](docs/組員新增資料索引.md)。
 
 This Windows project compares frozen ImageNet WideResNet50 layer2, layer3, and fusion features on MVTec AD screw, capsule, and metal_nut. The protocol follows `docs/group6_proposal.pdf` and includes 224 and 320 pixel inputs. Start with `docs/實作與執行指南.md` for the Traditional Chinese project explanation and reproduction steps. `docs/錄影報告指南.md` covers the presentation recording and submission.
 
